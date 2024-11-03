@@ -9,7 +9,7 @@ void usage(const char* exec)
 {
     cout << "" << endl;    
     cout << "Usage:" << endl;    
-    cout << "    " << exec << endl;    
+    cout << "    " << exec << " <input-text>" << endl;    
     cout << "" << endl;    
     exit(1);
 }
@@ -29,7 +29,7 @@ void run_example(const char* input)
     printf("\n");
     
     // print out recovered sequence
-    printf("string recovered: ");
+    printf("string recovered is: ");
     for(const auto& ch : recovered)
     {
         printf("%02x ", 0xff & ch);
