@@ -28,7 +28,7 @@ void run_example(const char* input)
     }
     printf("\n");
     
-    // print out converted sequence
+    // print out recovered sequence
     printf("string recovered: ");
     for(const auto& ch : recovered)
     {
